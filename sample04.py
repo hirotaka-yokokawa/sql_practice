@@ -7,7 +7,7 @@ def main():
     #
     #     f.close()
 
-    with open("users.txt", mode="r")as f:
+    with open("users.txt", mode="r") as f:
         text = f.read()
 
     print(text)
