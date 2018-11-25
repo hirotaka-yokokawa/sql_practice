@@ -1,13 +1,18 @@
 def main():
-    f = open("users.txt", mode="r")
+    #     f = open("users.txt", mode="r")
+    #
+    #     text = f.read()
+    #
+    #     print(text)
+    #
+    #     f.close()
 
-    text = f.read()
+    with open("users.txt", mode="r")as f:
+        text = f.read()
 
     print(text)
 
-    f.close()
-
-
+    print(f.closed)
 
 
 if __name__ == "__main__":
